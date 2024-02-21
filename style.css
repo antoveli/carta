@@ -23,7 +23,6 @@ body {
   position: relative;
   width: 300px;
   height: 200px;
-  
   background-color: #1a5276; /* Azul pavo más oscuro */
 }
 
@@ -71,6 +70,38 @@ body {
   color: #003049;
 }
 
+.heart {
+  background-color: #d62828;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 110px;
+  left: 105px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d62828;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
 .front {
   position: absolute;
   border-right: 180px solid #1a5276;
@@ -95,7 +126,17 @@ body {
 }
 
 /* Add the shadow */
-
+.shadow {
+  position: absolute;
+  width: 330px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 250px;
+  left: 650px;
+  animation: scale 3s linear infinite;
+  z-index: -1;
+}
 
 /* To move the envelope up and down */
 @keyframes up {
