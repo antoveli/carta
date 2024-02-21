@@ -23,6 +23,7 @@ body {
   position: relative;
   width: 300px;
   height: 200px;
+  
   background-color: #1a5276; /* Azul pavo más oscuro */
 }
 
@@ -68,38 +69,6 @@ body {
   top: 30px;
   left: 25px;
   color: #003049;
-}
-
-.heart {
-  background-color: #d62828;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 110px;
-  left: 105px;
-  transform: rotate(-45deg);
-  width: 30px;
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: #d62828;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-}
-
-.heart:before {
-  top: -15px;
-  left: 0;
-}
-
-.heart:after {
-  left: 15px;
-  top: 0;
 }
 
 .front {
