@@ -20,7 +20,7 @@
             <div class="envelope"></div>
             <div class="front"></div>
             <div class="card">
-                <div class="text"> Hola Lu,<br> Que tenga un bonito día <br>Éxitos y bendiciones...</div>
+                <div class="text" id="message"> Hola Lu,<br> Que tenga un bonito día <br>Éxitos y bendiciones...</div>
             </div>
         </div>
     </div>
@@ -29,6 +29,27 @@
     <div class="shadow"></div>
     </div>
     <script src="script.js"></script>
+
+
+    <script>
+        // Obtenemos la hora actual del sistema
+        var now = new Date();
+        var hour = now.getHours();
+
+        // Obtenemos el elemento de texto
+        var messageElement = document.getElementById("message");
+
+        // Cambiamos el mensaje según la hora del día
+        if (hour >= 0 && hour < 12) {
+            messageElement.innerHTML = "Hola Lu,<br>Que tenga un bonito día<br>Éxitos y bendiciones...";
+        } else if (hour >= 12 && hour < 19) {
+            messageElement.innerHTML = "Hola Lu,<br>Que tenga una bonita tarde<br>Éxitos y bendiciones...";
+        } else {
+            messageElement.innerHTML = "Hola Lu,<br>Que tenga una bonita noche<br>Éxitos y bendiciones...";
+        }
+    </script>
+
+
 </body>
 
 </html>
