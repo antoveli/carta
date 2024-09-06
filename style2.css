@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Courier New', monospace;
@@ -6,30 +7,34 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+   
 }
 
 .container {
     
     padding: 20px;
     border-radius: 10px;
-    max-width: 900px;
+    max-width: 950px;
     width: 150%;
     margin: auto;
     text-align: justify;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+ 
 }
 
 .letter {
     font-size: 1.2em;
     line-height: 1.5;
     margin-top: 20px;
-    white-space: pre-wrap;
+    white-space: nowrap;
     overflow: hidden;
     border-right: 0px solid rgba(255, 255, 255, 0.249); /* Efecto de cursor */
     width: 100%;
     animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+   
 }
 
 h1 {
